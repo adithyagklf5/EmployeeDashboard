@@ -21,7 +21,7 @@ export default function Home() {
         </caption>
         <thead>
           <tr>
-            <th>#</th>
+            <th>ID</th>
             <th>Name</th>
             <th>Email</th>
           </tr>
@@ -29,7 +29,7 @@ export default function Home() {
         <tbody>
           {users.map((user, index) => (
             <tr key={user.id}>
-              <td>{index + 1}</td>
+              <td>{user.id}</td>
               <td>{user.name}</td>
               <td>{user.email}</td>
             </tr>
